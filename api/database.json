@@ -1,0 +1,94 @@
+{
+    "clients": [
+        {
+            "id": 1,
+            "name": "Laura Beth Maddox",
+            "address": "951 Plateau Pkw",
+            "email": "laurabethmaddox"
+        },
+        {
+            "id": 2,
+            "name": "Gail Volkman",
+            "address": "874 Reba Centers",
+            "email": "gailvolkman@gmail.com"
+        },
+        {
+            "id": 3,
+            "name": "Braulio Erdman",
+            "address": "551 Tyrell Well",
+            "email": "braill@gmail.com"
+        },
+        {
+            "id": 4,
+            "name": "Alicia Bruen",
+            "address": "583 Wilderman Run",
+            "email": "alicia@gmail.com"
+        },
+        {
+            "id": 5,
+            "name": "Nels Tremblay",
+            "address": "73696 Darrion Greens",
+            "email": "nels@gmail.com"
+        },
+        {
+            "id": 6,
+            "name": "Porter Prohaska",
+            "address": "43696 Cormier Locks",
+            "email": "Porter@gmail.com"
+        },
+        {
+            "id": 7,
+            "name": "Emiliano Lebsack",
+            "address": "9691 Polly Turnpike",
+            "email": "emiliano@gmail.com"
+        },
+        {
+            "id": 8,
+            "name": "Richie Rempel",
+            "address": "2815 Barrows Unions",
+            "email": "richie.rempel@gmail.com"
+        },
+        {
+            "id": 9,
+            "name": "Keshawn Prosacco",
+            "address": "963 Wilderman Key",
+            "email": "keshawn@gmail.com"
+        },
+        {
+            "id": 10,
+            "name": "Verlie Ritchie",
+            "address": "6819 Jewell Mews",
+            "email": "verlie@gmail.com"
+        }
+    ],
+    "realtors": [
+        {
+            "id": 1,
+            "name": "Stephanie Maddox",
+            "specialty": "residential"
+        },
+        {
+            "id": 2,
+            "name": "Mike Ingram",
+            "specialty": "commercial"
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "clientId": 4,
+            "realtorId": 1,
+            "description": "I want a 4 bedroom open floor plan",
+            "emergency": false,
+            "dateCompleted": "2022-05-23"
+        },
+        {
+            "id": 2,
+            "clientId": 7,
+            "realtorId": 4,
+            "description": "I can only afford 100,000 dollar home",
+            "emergency": true,
+            "dateCompleted": ""
+        }
+    ]
+}
