@@ -1,30 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { ClientList } from './clients/ClientList';
+import { RealtorList } from './realtors/RealtorList';
 
 export const RealEstate = () => {
-    const [clients, updateClients] = useState([])
+    // const [clients, updateClients] = useState([])
 
-    useEffect(
-        () => {
-            fetch("http://localhost:8088/clients")
-                .then(res => res.json())
-                .then((clientArray) => {
-                    updateClients(clientArray)
-                })
-        }, 
-        []
-    )
+    // useEffect(
+    //     () => {
+    //         fetch("http://localhost:8088/clients")
+    //             .then(res => res.json())
+    //             .then((clientArray) => {
+    //                 updateClients(clientArray)
+    //             })
+    //     }, 
+    //     []
+    // )
 
     return (
         <>
             <h1>Real Estate Services</h1>
 
-            {
-                clients.map(
-                    (clientObj) => {
-                        return <h2>{clientObj.name}</h2>
-                    }
-                )
-            }
+            <ClientList />
+            <RealtorList />
         </>
     )
 }
