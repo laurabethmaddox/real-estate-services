@@ -3,24 +3,14 @@ import { ClientList } from './clients/ClientList';
 import { RealtorList } from './realtors/RealtorList';
 
 export const RealEstate = () => {
-    // const [clients, updateClients] = useState([])
-
-    // useEffect(
-    //     () => {
-    //         fetch("http://localhost:8088/clients")
-    //             .then(res => res.json())
-    //             .then((clientArray) => {
-    //                 updateClients(clientArray)
-    //             })
-    //     }, 
-    //     []
-    // )
-
     return (
         <>
             <h1>Real Estate Services</h1>
 
+            <h2>Client List</h2>
             <ClientList />
+
+            <h2>Realtor List</h2>
             <RealtorList />
         </>
     )

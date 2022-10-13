@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export const ClientList = () => {
     const [clients, updateClients] = useState([])
+    const [totalClientsMessage, updateMessage] = useState("")
 
     useEffect(
         () => {
@@ -14,13 +15,25 @@ export const ClientList = () => {
         []
     )
 
+    useEffect(
+        () => {
+            if (clients.length === 1) {
+                updateMessage("You have 1 client")
+            }
+            else {
+                updateMessage(`You have ${clients.length} clients`)
+            }
+        },
+        [clients]
+    )
+
     return (
         <>
-            <h1>Client List</h1>
+        <div>{totalClientsMessage}</div>
             {
-                clients.map(
+                clients.slice(0, 5).map(
                     (clientObj) => {
-                        return <p>{clientObj.name}</p>
+                        return <p key={`client--${clientObj.id}`}>{clientObj.name}</p>
                     }
                 )
             }

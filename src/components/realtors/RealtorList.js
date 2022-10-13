@@ -16,11 +16,10 @@ export const RealtorList = () => {
 
     return (
         <>
-            <h1>Realtor List</h1>
             {
                 realtors.map(
                     (realtorObj) => {
-                        return <p>{realtorObj.name}</p>
+                        return <p key={`realtor--${realtorObj.id}`}>{realtorObj.name}</p>
                     }
                 )
             }
