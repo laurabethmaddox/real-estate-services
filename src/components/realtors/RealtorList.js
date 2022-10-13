@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export const RealtorList = () => {
     const [realtors, updateRealtors] = useState([])
+    const [specialities, setSpeciality] = useState("")
 
     useEffect(
         () => {
@@ -14,8 +15,19 @@ export const RealtorList = () => {
         []
     )
 
+    useEffect(
+        () => {
+            const justSpecialities = realtors.map(real => real.specialty)
+            setSpeciality(justSpecialities.join(', '))
+        },
+        [realtors]
+    )
+
     return (
         <>
+            <div>
+                Specialties: { specialities }
+            </div>
             {
                 realtors.map(
                     (realtorObj) => {
