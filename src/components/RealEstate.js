@@ -1,6 +1,7 @@
 import React from 'react';
 import { ClientList } from './clients/ClientList';
 import { RealtorList } from './realtors/RealtorList';
+import { DesiresList } from './desires/DesiresList';
 
 export const RealEstate = () => {
     return (
@@ -12,6 +13,9 @@ export const RealEstate = () => {
 
             <h2>Realtor List</h2>
             <RealtorList />
+
+            <h2>Desires List</h2>
+            <DesiresList />
         </>
     )
 }
