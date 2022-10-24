@@ -71,6 +71,16 @@
             "id": 2,
             "name": "Mike Ingram",
             "specialty": "commercial"
+        },
+        {
+            "id": 3,
+            "name": "Sandy Sporer",
+            "specialty": "residential"
+        },
+        {
+            "id": 4,
+            "name": "Bruce Volkman",
+            "specialty": "residential"
         }
     ],
     "desires": [
